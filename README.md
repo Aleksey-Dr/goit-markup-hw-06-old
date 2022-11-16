@@ -13,3 +13,7 @@ This is a repository for my homework number six
 7. Added a .button-subscribe class.
 8. Added an .icon-send class.
 9. Added a icon-send.svg in the icons.svg.
+
+16/11/2022
+
+1. Added a <label> to <footer>.

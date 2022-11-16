@@ -726,9 +726,15 @@ img {
   margin-left: auto;
 }
 
+.form-subscribe {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Marker */
 .title-subscribe {
   display: block;
+  width: 207px;
   margin-bottom: 20px;
 
   font-family: "Roboto" sans-serif;
@@ -739,10 +745,6 @@ img {
   text-transform: uppercase;
 
   color: #ffffff;
-}
-
-.form-subscribe {
-  display: flex;
 }
 
 /* Marker */
