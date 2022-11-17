@@ -17,3 +17,22 @@ This is a repository for my homework number six
 16/11/2022
 
 1. Added a <label> to <footer>.
+2. Added a markup to the modal-window in the Studio page.
+3. Added padding to the .modal-window class.
+4. Added a .title-modal class.
+5. Added a .title-label class.
+6. Added a .check-convention class.
+7. Added a .check-convention a selector.
+8. Added a .button-submit class.
+9. Added new icons to the icons.svg.
+
+17/11/2022
+
+1. Added an .input-modal class.
+2. Added .button-submit:holder and .button-submit:focus pseudo-classes.
+3. Added <svg> with <use> to <form> in the Portfolio page.
+4. Fixed the :hover for the .icon-close.
+5. Added an .input-container class.
+6. Added an .icon-input class.
+7. Added a comment-modal::placeholder pseudo-element.
+8. Added a .button-submit:hover and a .button-submit:focus pseudo-classes.

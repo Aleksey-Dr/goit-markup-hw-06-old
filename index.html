@@ -499,12 +499,17 @@
           </ul>
         </div>
         <div class="subscribe">
-          <form class="form-subscribe">
+          <form name="subscribe" autocomplete="on" class="form-subscribe">
             <div>
               <label class="title-subscribe" for="email"
                 >Підпишіться на розсилку</label
               >
-              <input class="email-fild" type="email" id="email" placeholder="E-mail" />
+              <input
+                class="email-fild"
+                type="email"
+                id="email"
+                placeholder="E-mail"
+              />
             </div>
             <button class="button-subscribe" type="submit">
               Підписатися<svg class="icon-send">
@@ -524,6 +529,47 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form name="feedback" autocomplete="on">
+          <strong class="title-modal"
+            >Залиште свої дані, ми вам передзвонимо</strong
+          >
+          <label for="user-name" class="title-label">Ім'я</label>
+          <div class="input-container">
+            <input type="text" id="user-name" class="input-modal" />
+            <svg class="icon-input">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+          <label for="tel" class="title-label">Телефон</label>
+          <div class="input-container">
+            <input type="tel" id="tel" class="input-modal" />
+            <svg class="icon-input">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </div>
+          <label for="email" class="title-label">Пошта</label>
+          <div class="input-container">
+            <input type="email" id="email" class="input-modal" />
+            <svg class="icon-input">
+              <use href="./images/icons.svg#icon-email-black"></use>
+            </svg>
+          </div>
+          <label for="comment" class="title-label">Коментар</label>
+          <textarea
+            name=""
+            id="comment"
+            cols="30"
+            rows="10"
+            class="comment-modal"
+            placeholder="Введіть текст"
+          ></textarea>
+          <p class="check-convention">
+            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+          </p>
+          <div class="button-container">
+            <button type="submit" class="button-submit">Відправити</button>
+          </div>
+        </form>
       </div>
     </div>
 
