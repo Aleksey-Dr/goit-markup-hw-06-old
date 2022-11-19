@@ -36,3 +36,12 @@ This is a repository for my homework number six
 6. Added an .icon-input class.
 7. Added a comment-modal::placeholder pseudo-element.
 8. Added a .button-submit:hover and a .button-submit:focus pseudo-classes.
+
+19/11/2022
+
+1. Added a name="" attribute to the <input> teg in the footer.
+2. Added a name="" attribute to the <input> teg in the modal-window.
+3. Added a .icon-wrapper class.
+4. Added a .icon-bird class.
+5. Added a .check-convention input:checked + label .icon-wrapper selector.
+6. Added a .check-convention input:checked + label .icon-bird.

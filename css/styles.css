@@ -705,7 +705,6 @@ img {
 /* Subscribe */
 /* Marker */
 .subscribe {
-  /* display: flex; */
   margin-left: auto;
 }
 
@@ -890,9 +889,10 @@ img {
 
 /* Marker */
 .input-modal {
+  transition: border 250ms var(--timing-function);
   width: 100%;
   height: 40px;
-  padding: 11px 12px;
+  padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -909,12 +909,27 @@ img {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  transition: fill 250ms var(--timing-function);
   width: 18px;
   height: 18px;
+
+  fill: var(--title-text-color);
+}
+
+.input-modal:focus,
+.comment-modal:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+/* Marker */
+.input-modal:focus + .icon-input {
+  fill: var(--accent-color);
 }
 
 /* Marker */
 .comment-modal {
+  transition: border 250ms var(--timing-function);
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -928,7 +943,6 @@ img {
 /* Marker */
 .comment-modal::placeholder {
   font-family: inherit;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -938,15 +952,47 @@ img {
 }
 
 /* Marker */
+.check-convention label {
+  display: flex;
+  align-items: center;
+}
+
+/* Marker */
+.check-convention .icon-wrapper {
+  display: flex;
+  padding: 3px 1px 2px 2px;
+  margin-right: 8px;
+  margin-left: 12px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+/* Marker */
+.icon-bird {
+  fill: transparent;
+}
+
+.check-convention input:checked + label .icon-wrapper {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.check-convention input:checked + label .icon-bird {
+  fill: #ffffff;
+}
+
+/* Marker */
 .check-convention {
+  /* display: flex; */
   margin-bottom: 30px;
 
   font-family: inherit;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
@@ -955,7 +1001,6 @@ img {
 /* Marker */
 .check-convention a {
   font-family: inherit;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

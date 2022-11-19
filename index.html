@@ -498,6 +498,7 @@
             </li>
           </ul>
         </div>
+        <!-- Subscribe -->
         <div class="subscribe">
           <form name="subscribe" autocomplete="on" class="form-subscribe">
             <div>
@@ -505,10 +506,11 @@
                 >Підпишіться на розсилку</label
               >
               <input
-                class="email-fild"
                 type="email"
+                name="footer-user-email"
                 id="email"
                 placeholder="E-mail"
+                class="email-fild"
               />
             </div>
             <button class="button-subscribe" type="submit">
@@ -535,37 +537,59 @@
           >
           <label for="user-name" class="title-label">Ім'я</label>
           <div class="input-container">
-            <input type="text" id="user-name" class="input-modal" />
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="input-modal"
+            />
             <svg class="icon-input">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
           <label for="tel" class="title-label">Телефон</label>
           <div class="input-container">
-            <input type="tel" id="tel" class="input-modal" />
+            <input type="tel" name="user-tel" id="tel" class="input-modal" />
             <svg class="icon-input">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </div>
-          <label for="email" class="title-label">Пошта</label>
+          <label for="user-email" class="title-label">Пошта</label>
           <div class="input-container">
-            <input type="email" id="email" class="input-modal" />
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="input-modal"
+            />
             <svg class="icon-input">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </div>
           <label for="comment" class="title-label">Коментар</label>
           <textarea
-            name=""
+            name="user-comment"
             id="comment"
-            cols="30"
-            rows="10"
-            class="comment-modal"
             placeholder="Введіть текст"
+            class="comment-modal"
           ></textarea>
-          <p class="check-convention">
-            Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-          </p>
+          <div class="check-convention">
+            <input
+              type="checkbox"
+              value="convention"
+              name="user-convention"
+              id="user-convention"
+              class="visually-hidden"
+            />
+            <label for="user-convention"
+              ><span class="icon-wrapper"
+                ><svg class="icon-bird">
+                  <use href="./images/icons.svg#icon-bird"></use></svg></span
+              ><span>
+                Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+              </span></label
+            >
+          </div>
           <div class="button-container">
             <button type="submit" class="button-submit">Відправити</button>
           </div>
