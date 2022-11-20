@@ -45,3 +45,8 @@ This is a repository for my homework number six
 4. Added a .icon-bird class.
 5. Added a .check-convention input:checked + label .icon-wrapper selector.
 6. Added a .check-convention input:checked + label .icon-bird.
+
+20/11/2022
+
+1. Added the cursor property with the pointer value for the .modal-button-close and the .button-submit classes.
+2. Added the background-color property with the inherit value for the .modal-button-close class.
